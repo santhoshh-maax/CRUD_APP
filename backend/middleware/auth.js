@@ -1,0 +1,33 @@
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+
+const JWT_KEY = process.env.JWT_KEY;
+
+const authMiddleware= (request, response, next) => {
+    const authHeader = request.headers.authorization;
+    
+    console.log("Header: ",authHeader);
+
+    if(!authHeader){
+        return response.status(401).json({
+            message: "Token Missing"
+        });
+    }
+
+    const token = authHeader.split(" ")[1];
+
+    try {
+        const decoded = jwt.verify(token, JWT_KEY);
+
+        request.user = decoded;
+        console.log("Decoded: ",decoded);
+
+        next();
+    } catch (error) {
+        return response.status(401).json({
+            message: "Invalid Token"
+        });
+    }
+};
+
+module.exports = authMiddleware;
