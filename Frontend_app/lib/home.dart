@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text(
                   "CREATE",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color:Colors.black),
                 ),
               ),
             ),
@@ -103,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text(
                   "READ",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color:Colors.black),
                 ),
               ),
             ),
@@ -126,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text(
                   "UPDATE",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color:Colors.black),
                 ),
               ),
             ),
@@ -151,7 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text(
                   "DELETE",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color:Colors.black),
                 ),
               ),
             ),
