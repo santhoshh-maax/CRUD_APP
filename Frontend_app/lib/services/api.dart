@@ -10,7 +10,7 @@ class Api {
   //also change the proxy setting in emulator setting  page
 
   // Render server URL (Replace with your actual Render URL after deploying on Render, must end with '/')
-  static const baseurl = "https://your-service-name.onrender.com/";
+  static const baseurl = "https://crud-app-hqtp.onrender.com/";
 
   // Local testing (Android Emulator: 10.0.2.2, Physical device: use local Wi-Fi IP, Windows/Web: localhost)
   // static const baseurl = "http://10.0.2.2:2222/";
