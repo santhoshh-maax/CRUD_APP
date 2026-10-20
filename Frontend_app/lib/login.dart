@@ -172,17 +172,17 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
       ),
-      bottomNavigationBar: Container(
-        height: 100,
-        color: Colors.blue,
-        child: const Center(
-          child: Text(
-            // "Connect Lap & mobile in same network\n"
-            "      User name: san, Pwd: san@123",
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
+      // bottomNavigationBar: Container(
+      //   height: 100,
+      //   color: Colors.blue,
+      //   child: const Center(
+      //     child: Text(
+      //       // "Connect Lap & mobile in same network\n"
+      //       "      User name: san, Pwd: san@123",
+      //       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      //     ),
+      //   ),
+      // ),
     );
   }
 }
